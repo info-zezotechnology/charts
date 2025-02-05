@@ -1,4 +1,4 @@
-# Copyright VMware, Inc.
+# Copyright Broadcom, Inc. All Rights Reserved.
 # SPDX-License-Identifier: APACHE-2.0
 
 name: '[Support] Close Solved issues'
@@ -12,7 +12,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v6.0.1
+      - uses: actions/stale@5bef64f19d7facfb25b37b414482c7164d639639
         with:
           any-of-labels: 'solved'
           stale-issue-label: 'solved'
